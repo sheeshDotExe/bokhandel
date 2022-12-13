@@ -1,0 +1,9 @@
+[
+    {"id":0, "name":"Anna Karenina", "author":"Leo Tolstoy",
+    "info":"Anna Karenina tells of the doomed love affair between the sensuous and rebellious Anna and the dashing officer, Count Vronsky. Tragedy unfolds as Anna rejects her passionless marriage and must endure the hypocrisies of society. Set against a vast and richly textured canvas of nineteenth-century Russia, the novel's seven major characters create a dynamic imbalance, playing out the contrasts of city and country life and all the variations on love and family happiness. While previous versions have softened the robust, and sometimes shocking, quality of Tolstoy's writing, Pevear and Volokhonsky have produced a translation true to his powerful voice. This award-winning team's authoritative edition also includes an illuminating introduction and explanatory notes. Beautiful, vigorous, and eminently readable, this Anna Karenina will be the definitive text for generations to come.",
+    "img":"./images/bok1.png", "price":199.00},
+    {"id":1, "name":"lorum", "author":"kaputlemur", "info":"ipsum", "img":"unkown", "price":69420},
+    {"id":2, "name":"lorum", "author":"kamel", "info":"ipsum", "img":"unkown", "price":420},
+    {"id":3, "name":"lorum", "author":"kamel", "info":"ipsum", "img":"unkown", "price":420},
+    {"id":4, "name":"lorum", "author":"kamel", "info":"ipsum", "img":"unkown", "price":420}
+]
