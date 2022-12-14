@@ -4,9 +4,6 @@ const cart = [];
 let homeButton;
 let cartButton;
 
-let resetFunction = () => {};
-let showBook = (book) => {};
-
 function setCartTitle() {
   if (cart.length) {
     cartButton.innerHTML = `Handlevogn ${
@@ -76,6 +73,21 @@ function createBook(book, addInfo) {
   return element;
 }
 
+function createCategory(name) {
+  const categoryDiv = document.createElement("div");
+  categoryDiv.className = "category";
+
+  const line = document.createElement("hr");
+  const text = document.createElement("h2");
+  text.innerHTML = name;
+
+  categoryDiv.appendChild(line);
+  categoryDiv.appendChild(text);
+  categoryDiv.appendChild(line);
+
+  return categoryDiv;
+}
+
 function createCart() {
   const element = document.createElement("div");
 
@@ -91,6 +103,15 @@ function createCart() {
 
   return element;
 }
+
+const dictCheck = (value, dict) => {
+  for (const key in dict) {
+    if (value === key) {
+      return true;
+    }
+  }
+  return false;
+};
 
 class Display {
   constructor() {}
@@ -109,8 +130,27 @@ class Display {
 
   showBooks() {
     this.clearElements();
+    const categories = {};
     for (const book of bookContent) {
-      this.booksContainer.appendChild(createBook(book, false));
+      if (!dictCheck(book.category, categories)) {
+        categories[book.category] = {
+          name: createCategory(book.category),
+          books: [createBook(book, false)],
+        };
+      } else {
+        categories[book.category].books.push(createBook(book, false));
+      }
+    }
+
+    for (const categoryIndex in categories) {
+      const category = categories[categoryIndex];
+      this.booksContainer.appendChild(category.name);
+      const books = document.createElement("div");
+      books.className = "books-container";
+      for (const book of category.books) {
+        books.appendChild(book);
+      }
+      this.booksContainer.appendChild(books);
     }
   }
 
@@ -127,13 +167,13 @@ class Display {
 
 const display = new Display();
 
-resetFunction = () => {
+const resetFunction = () => {
   cart.splice(0, cart.length);
   setCartTitle();
   display.showCart();
 };
 
-showBook = (book) => {
+const showBook = (book) => {
   display.showBook(book);
 };
 

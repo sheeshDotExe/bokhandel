@@ -1,5 +1,5 @@
-#books-container {
-  margin-top: 4rem;
+.books-container {
+  margin-top: 1rem;
 }
 
 .book {
@@ -26,9 +26,19 @@
   align-items: center;
 }
 
-@media screen and (min-width: 600px) {
-  #books-container {
+.category {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .books-container {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .books-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
