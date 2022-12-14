@@ -9,13 +9,18 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  outline: black solid 1px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
   gap: 1rem;
   padding: 2rem 0;
-  margin-bottom: 2rem;
-  border-radius: 2%;
+  margin-bottom: 10rem;
+  border-radius: 3px;
+  background: radial-gradient(
+    70rem circle at 50% 50%,
+    rgba(255, 255, 255, 0.06),
+    transparent 40%
+  );
   background-color: var(--book-color);
   color: var(--book-text-color);
 }

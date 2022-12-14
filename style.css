@@ -1,8 +1,8 @@
 :root {
-  --background-color: #bab0ac;
+  --background-color: rgb(20, 20, 20);
   --text-color: #4e79a7;
-  --book-color: #76b7b2;
-  --book-text-color: #e15759;
+  --book-color: rgba(255, 255, 255, 0.02);
+  --book-text-color: rgba(255, 255, 255, 0.8);
   --navbar-color: #9c755f;
 }
 
