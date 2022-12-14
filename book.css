@@ -1,5 +1,8 @@
 .books-container {
   margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 0 1rem;
 }
 
 .book {
@@ -28,17 +31,4 @@
 
 .category {
   margin-top: 2rem;
-}
-
-@media screen and (min-width: 700px) {
-  .books-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .books-container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }

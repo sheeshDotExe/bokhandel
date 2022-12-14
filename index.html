@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="cssreset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="book.css" />
+    <link rel="stylesheet" href="cart.css" />
     <script type="module" src="main.js"></script>
     <title>Mqp</title>
   </head>
@@ -14,9 +15,15 @@
     <header>
       <div class="header">
         <h1>Mas Que papel?</h1>
+        <input
+          class="nav-item"
+          type="text"
+          placeholder="search..."
+          id="search-bar"
+        />
         <nav class="main-nav">
-          <button id="home-button">Hjem</button>
-          <button id="cart-button">Handlevogn</button>
+          <button class="nav-item" id="home-button">Hjem</button>
+          <button class="nav-item" id="cart-button">Handlevogn</button>
         </nav>
       </div>
     </header>
@@ -29,7 +36,7 @@
 
     <footer>
       <div class="contact-info">
-        <p>Sorry, we currently don't have any contact information</p>
+        <p>Beklager, vi har for øyeblikket ingen kontaktinformasjon!</p>
       </div>
     </footer>
   </body>
