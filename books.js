@@ -27,6 +27,7 @@ export const createBook = (book, addInfo) => {
   const addToCart = document.createElement("button");
 
   const infoContainer = document.createElement("div");
+  infoContainer.className = "book-info";
   if (addInfo) {
     infoContainer.innerHTML = book.info;
   }

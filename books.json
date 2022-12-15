@@ -13,7 +13,7 @@
     "name": "lorum",
     "author": "kaputlemur",
     "info": "ipsum",
-    "img": "unkown",
+    "img": "./images/bok1.png",
     "category": "hehe",
     "price": 69420
   },
@@ -22,16 +22,16 @@
     "name": "lorum",
     "author": "kamel",
     "info": "ipsum",
-    "img": "unkown",
+    "img": "./images/bok1.png",
     "category": "sheesh",
     "price": 420
   },
   {
     "id": 3,
-    "name": "lorum",
+    "name": "kabel",
     "author": "kamel",
     "info": "ipsum",
-    "img": "unkown",
+    "img": "./images/bok1.png",
     "category": "hehe",
     "price": 420
   },
@@ -40,7 +40,7 @@
     "name": "lorum",
     "author": "kamel",
     "info": "ipsum",
-    "img": "unkown",
+    "img": "./images/bok1.png",
     "category": "hehe",
     "price": 420
   }
